@@ -1,0 +1,8 @@
+{
+  "name": "agpl-saas-project",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "some-agpl-lib": "^1.0.0"
+  }
+}

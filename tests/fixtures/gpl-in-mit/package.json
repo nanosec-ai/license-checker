@@ -1,0 +1,8 @@
+{
+  "name": "gpl-in-mit-project",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "safe-lib": "^1.0.0"
+  }
+}

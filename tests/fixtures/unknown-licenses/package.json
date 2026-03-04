@@ -1,0 +1,8 @@
+{
+  "name": "unknown-license-project",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "mystery-pkg": "^1.0.0"
+  }
+}
