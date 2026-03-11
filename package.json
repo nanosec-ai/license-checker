@@ -10,14 +10,23 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "test": "vitest run",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js --transport stdio",
+    "start:http": "node dist/index.js --transport http"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nanosec-ai/license-checker.git"
   },
   "description": "License compliance auditor and SBOM generator for npm and Python projects. Detects copyleft contamination, generates CycloneDX/SPDX SBOMs, and assesses EU CRA readiness.",
-  "keywords": ["mcp", "license", "compliance", "sbom", "cyclonedx", "spdx", "cra"],
+  "keywords": [
+    "mcp",
+    "license",
+    "compliance",
+    "sbom",
+    "cyclonedx",
+    "spdx",
+    "cra"
+  ],
   "author": "",
   "license": "MIT",
   "engines": {
@@ -29,11 +38,13 @@
   "homepage": "https://github.com/nanosec-ai/license-checker#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1",
+    "express": "^5.2.1",
     "semver": "^7.7.4",
     "uuid": "^11.1.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^25.3.3",
     "@types/semver": "^7.7.1",
     "@types/uuid": "^10.0.0",
