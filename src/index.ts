@@ -302,8 +302,9 @@ async function main() {
       }
     });
 
-    const httpServer = app.listen(3002, '0.0.0.0', () => {
-      console.error('license-checker HTTP server listening on 0.0.0.0:3002');
+    const port = parseInt(process.env.PORT || '3002');
+    const httpServer = app.listen(port, '0.0.0.0', () => {
+      console.error(`license-checker HTTP server listening on 0.0.0.0:${port}`);
     });
 
     await server.connect(transport);

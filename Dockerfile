@@ -5,4 +5,4 @@ RUN npm ci
 COPY . .
 RUN npm run build
 RUN npm prune --production
-ENTRYPOINT ["node", "dist/index.js"]
+ENTRYPOINT ["node", "dist/index.js", "--transport", "http"]
